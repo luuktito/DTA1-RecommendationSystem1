@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,8 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\NearestNeighbour.cs" />
+    <Compile Include="Algorithms\Prediction.cs" />
+    <Compile Include="Parser\Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Similarity\Cosine.cs" />
+    <Compile Include="Similarity\Euclidean.cs" />
+    <Compile Include="Similarity\ISimilarity.cs" />
+    <Compile Include="Similarity\Pearson.cs" />
+    <Compile Include="Utils\RatingsFunctions.cs" />
+    <Compile Include="Utils\Vector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
